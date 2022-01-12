@@ -70,6 +70,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
 
+        <lombok.version>1.18.22</lombok.version>
+        <junit-jupiter.version>5.8.2</junit-jupiter.version>
+        <jmockit.version>1.49</jmockit.version>
+
         <annotations.version>23.0.0</annotations.version>
         <auto-service.version>1.0.1</auto-service.version>
         <awaitility.version>4.1.1</awaitility.version>
@@ -91,7 +95,6 @@
         <joor-java-8.version>0.9.14</joor-java-8.version>
         <joou-java-6.version>0.9.4</joou-java-6.version>
         <logback.version>1.2.10</logback.version>
-        <lombok.version>1.18.22</lombok.version>
         <netty-all.version>4.1.72.Final</netty-all.version><!-- compatible with vertx 4.2.3 -->
         <okhttp.version>3.14.9</okhttp.version><!-- from spring-boot-dependencies 2.6.2 -->
         <redisson.version>3.16.7</redisson.version>
@@ -113,8 +116,6 @@
         <h2.version>2.0.206</h2.version>
         <delayqueue.version>0.0.20</delayqueue.version>
 
-        <junit-jupiter.version>5.8.2</junit-jupiter.version>
-        <jmockit.version>1.49</jmockit.version>
         <compile-testing.version>0.19</compile-testing.version>
         <embedded-redis.version>0.6</embedded-redis.version>
         <wix-embedded-mysql.version>4.6.1</wix-embedded-mysql.version>
@@ -130,7 +131,34 @@
         <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
     </properties>
 
-    <dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jmockit</groupId>
+            <artifactId>jmockit</artifactId>
+            <version>${jmockit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+   <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.jetbrains</groupId>
@@ -249,12 +277,6 @@
                 <version>${logback.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>${lombok.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
                 <version>${netty-all.version}</version>
@@ -283,6 +305,8 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>com.moandjiezana.toml</groupId>
@@ -381,24 +405,6 @@
                 <version>${delayqueue.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-api</artifactId>
-                <version>${junit-jupiter.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-engine</artifactId>
-                <version>${junit-jupiter.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.jmockit</groupId>
-                <artifactId>jmockit</artifactId>
-                <version>${jmockit.version}</version>
-                <scope>test</scope>
-            </dependency>
             <dependency>
                 <groupId>com.google.testing.compile</groupId>
                 <artifactId>compile-testing</artifactId>
