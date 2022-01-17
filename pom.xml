@@ -98,7 +98,7 @@
         <netty-all.version>4.1.72.Final</netty-all.version><!-- compatible with vertx 4.2.3 -->
         <okhttp.version>3.14.9</okhttp.version><!-- from spring-boot-dependencies 2.6.2 -->
         <redisson.version>3.16.7</redisson.version>
-        <slf4j-api.version>1.7.32</slf4j-api.version>
+        <slf4j-api.version>1.7.33</slf4j-api.version>
         <spring-boot.version>2.6.2</spring-boot.version>
         <toml4j.version>0.7.2</toml4j.version>
         <transmittable-thread-local.version>2.12.4</transmittable-thread-local.version>
