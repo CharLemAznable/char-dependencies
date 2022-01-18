@@ -95,8 +95,10 @@
         <joor-java-8.version>0.9.14</joor-java-8.version>
         <joou-java-6.version>0.9.4</joou-java-6.version>
         <logback.version>1.2.10</logback.version>
-        <netty-all.version>4.1.72.Final</netty-all.version><!-- compatible with vertx 4.2.3 -->
-        <okhttp.version>3.14.9</okhttp.version><!-- from spring-boot-dependencies 2.6.2 -->
+        <!-- compatible with vertx-dependencies 4.2.3 -->
+        <netty-all.version>4.1.72.Final</netty-all.version>
+        <!-- compatible with spring-boot-dependencies 2.6.2 -->
+        <okhttp.version>3.14.9</okhttp.version>
         <redisson.version>3.16.7</redisson.version>
         <slf4j-api.version>1.7.33</slf4j-api.version>
         <spring-boot.version>2.6.2</spring-boot.version>
