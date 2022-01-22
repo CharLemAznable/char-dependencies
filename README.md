@@ -5,7 +5,13 @@
 
 ##### Maven Parent
 
-待发布.
+```xml
+<parent>
+  <groupId>com.github.charlemaznable</groupId>
+  <artifactId>char-dependencies</artifactId>
+  <version>0.0.5</version>
+</parent>
+```
 
 ##### Maven Parent SNAPSHOT
 
@@ -13,6 +19,6 @@
 <parent>
   <groupId>com.github.charlemaznable</groupId>
   <artifactId>char-dependencies</artifactId>
-  <version>0.0.5-SNAPSHOT</version>
+  <version>0.0.6-SNAPSHOT</version>
 </parent>
 ```
