@@ -101,7 +101,7 @@
         <!-- compatible with spring-boot-dependencies 2.6.3 -->
         <okhttp.version>3.14.9</okhttp.version>
         <redisson.version>3.16.8</redisson.version>
-        <slf4j-api.version>1.7.35</slf4j-api.version>
+        <slf4j-api.version>1.7.36</slf4j-api.version>
         <spring-boot.version>2.6.3</spring-boot.version>
         <toml4j.version>0.7.2</toml4j.version>
         <transmittable-thread-local.version>2.12.4</transmittable-thread-local.version>
