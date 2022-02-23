@@ -95,7 +95,7 @@
         <joor-java-8.version>0.9.14</joor-java-8.version>
         <joou-java-6.version>0.9.4</joou-java-6.version>
         <logback.version>1.2.10</logback.version>
-        <!-- compatible with vertx-dependencies 4.2.4 -->
+        <!-- compatible with vertx-dependencies 4.2.5 -->
         <netty-all.version>4.1.74.Final</netty-all.version>
         <!-- compatible with spring-boot-dependencies 2.6.3 -->
         <okhttp.version>3.14.9</okhttp.version>
