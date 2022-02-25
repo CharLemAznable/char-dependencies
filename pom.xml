@@ -70,56 +70,53 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
 
-        <lombok.version>1.18.22</lombok.version>
-        <junit-jupiter.version>5.8.2</junit-jupiter.version>
-        <testcontainers.version>1.16.3</testcontainers.version>
-
         <annotations.version>23.0.0</annotations.version>
+        <asmvalidator.version>0.0.16</asmvalidator.version>
+        <asm-all.version>5.2</asm-all.version>
         <auto-service.version>1.0.1</auto-service.version>
         <awaitility.version>4.1.1</awaitility.version>
         <cglib-nodep.version>3.3.0</cglib-nodep.version>
         <commons-lang3.version>3.12.0</commons-lang3.version>
         <commons-pool2.version>2.11.1</commons-pool2.version>
         <commons-text.version>1.9</commons-text.version>
+        <compile-testing.version>0.19</compile-testing.version>
+        <delayqueue.version>0.0.20</delayqueue.version>
+        <diamond-client.version>0.0.22</diamond-client.version>
         <dom4j.version>2.1.3</dom4j.version>
+        <druid.version>1.2.8</druid.version>
+        <embedded-redis.version>0.6</embedded-redis.version>
+        <eql.version>0.1.14</eql.version>
         <expiringmap.version>0.5.10</expiringmap.version>
         <fastjson.version>1.2.79</fastjson.version>
         <format-preserving-encryption.version>1.0.0</format-preserving-encryption.version>
         <guava.version>31.0.1-jre</guava.version>
         <guice.version>5.1.0</guice.version>
+        <h2.version>2.1.210</h2.version>
         <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
         <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
         <jaxb-api.version>2.3.1</jaxb-api.version>
+        <jedis.version>4.1.1</jedis.version>
         <joda-time.version>2.10.13</joda-time.version>
         <jool-java-8.version>0.9.14</jool-java-8.version>
         <joor-java-8.version>0.9.14</joor-java-8.version>
         <joou-java-6.version>0.9.4</joou-java-6.version>
+        <junit-jupiter.version>5.8.2</junit-jupiter.version>
         <logback.version>1.2.10</logback.version>
+        <lombok.version>1.18.22</lombok.version>
         <!-- compatible with vertx-dependencies 4.2.5 -->
         <netty.version>4.1.74.Final</netty.version>
         <!-- compatible with spring-boot-dependencies 2.6.3 -->
         <okhttp.version>3.14.9</okhttp.version>
+        <quartz.version>2.3.2</quartz.version>
         <redisson.version>3.16.8</redisson.version>
         <slf4j-api.version>1.7.36</slf4j-api.version>
         <spring-boot.version>2.6.3</spring-boot.version>
+        <testcontainers.version>1.16.3</testcontainers.version>
         <toml4j.version>0.7.2</toml4j.version>
         <transmittable-thread-local.version>2.12.4</transmittable-thread-local.version>
         <vertx.version>4.2.5</vertx.version>
-
-        <eql.version>0.1.14</eql.version>
-        <druid.version>1.2.8</druid.version>
-        <asm-all.version>5.2</asm-all.version>
-        <asmvalidator.version>0.0.16</asmvalidator.version>
-        <diamond-client.version>0.0.22</diamond-client.version>
         <westcache.version>0.0.35</westcache.version>
-        <quartz.version>2.3.2</quartz.version>
-        <jedis.version>4.1.1</jedis.version>
         <westid.version>0.0.3</westid.version>
-        <h2.version>2.1.210</h2.version>
-        <delayqueue.version>0.0.20</delayqueue.version>
-
-        <compile-testing.version>0.19</compile-testing.version>
-        <embedded-redis.version>0.6</embedded-redis.version>
         <wix-embedded-mysql.version>4.6.1</wix-embedded-mysql.version>
 
         <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
@@ -138,11 +135,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <scope>test</scope>
@@ -153,9 +145,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.testcontainers</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <scope>test</scope>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -187,40 +179,29 @@
             <artifactId>spring-boot-starter-undertow</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.testcontainers</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
    <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>${lombok.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-api</artifactId>
-                <version>${junit-jupiter.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-engine</artifactId>
-                <version>${junit-jupiter.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.testcontainers</groupId>
-                <artifactId>testcontainers-bom</artifactId>
-                <version>${testcontainers.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-            <dependency>
                 <groupId>org.jetbrains</groupId>
                 <artifactId>annotations</artifactId>
                 <version>${annotations.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bingoohuang</groupId>
+                <artifactId>asmvalidator</artifactId>
+                <version>${asmvalidator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ow2.asm</groupId>
+                <artifactId>asm-all</artifactId>
+                <version>${asm-all.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.google.auto.service</groupId>
@@ -253,9 +234,39 @@
                 <version>${commons-text.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.google.testing.compile</groupId>
+                <artifactId>compile-testing</artifactId>
+                <version>${compile-testing.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bingoohuang</groupId>
+                <artifactId>delayqueue</artifactId>
+                <version>${delayqueue.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bingoohuang</groupId>
+                <artifactId>diamond-client</artifactId>
+                <version>${diamond-client.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.dom4j</groupId>
                 <artifactId>dom4j</artifactId>
                 <version>${dom4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.kstyrc</groupId>
+                <artifactId>embedded-redis</artifactId>
+                <version>${embedded-redis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bingoohuang</groupId>
+                <artifactId>eql</artifactId>
+                <version>${eql.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.jodah</groupId>
@@ -283,6 +294,11 @@
                 <version>${guice.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>${h2.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>javax.annotation</groupId>
                 <artifactId>javax.annotation-api</artifactId>
                 <version>${javax.annotation-api.version}</version>
@@ -297,6 +313,11 @@
                 <groupId>javax.xml.bind</groupId>
                 <artifactId>jaxb-api</artifactId>
                 <version>${jaxb-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
             </dependency>
             <dependency>
                 <groupId>joda-time</groupId>
@@ -319,6 +340,16 @@
                 <version>${joou-java-6.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit-jupiter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit-jupiter.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-core</artifactId>
                 <version>${logback.version}</version>
@@ -334,6 +365,12 @@
                 <version>${logback.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
                 <version>${netty.version}</version>
@@ -347,13 +384,23 @@
             </dependency>
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
-                <artifactId>okhttp</artifactId>
+                <artifactId>logging-interceptor</artifactId>
                 <version>${okhttp.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
-                <artifactId>logging-interceptor</artifactId>
+                <artifactId>mockwebserver</artifactId>
                 <version>${okhttp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.quartz-scheduler</groupId>
+                <artifactId>quartz</artifactId>
+                <version>${quartz.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.redisson</groupId>
@@ -369,6 +416,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>testcontainers-bom</artifactId>
+                <version>${testcontainers.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -389,11 +443,6 @@
             </dependency>
             <dependency>
                 <groupId>io.vertx</groupId>
-                <artifactId>vertx-web</artifactId>
-                <version>${vertx.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.vertx</groupId>
                 <artifactId>vertx-hazelcast</artifactId>
                 <version>${vertx.version}</version>
             </dependency>
@@ -404,7 +453,22 @@
             </dependency>
             <dependency>
                 <groupId>io.vertx</groupId>
-                <artifactId>vertx-zookeeper</artifactId>
+                <artifactId>vertx-junit5</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-rx-java</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-rx-java2</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-web</artifactId>
                 <version>${vertx.version}</version>
             </dependency>
             <dependency>
@@ -412,31 +476,10 @@
                 <artifactId>vertx-web-client</artifactId>
                 <version>${vertx.version}</version>
             </dependency>
-
             <dependency>
-                <groupId>com.github.bingoohuang</groupId>
-                <artifactId>eql</artifactId>
-                <version>${eql.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid</artifactId>
-                <version>${druid.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.ow2.asm</groupId>
-                <artifactId>asm-all</artifactId>
-                <version>${asm-all.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.bingoohuang</groupId>
-                <artifactId>asmvalidator</artifactId>
-                <version>${asmvalidator.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.bingoohuang</groupId>
-                <artifactId>diamond-client</artifactId>
-                <version>${diamond-client.version}</version>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-zookeeper</artifactId>
+                <version>${vertx.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.bingoohuang</groupId>
@@ -444,72 +487,14 @@
                 <version>${westcache.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.quartz-scheduler</groupId>
-                <artifactId>quartz</artifactId>
-                <version>${quartz.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>redis.clients</groupId>
-                <artifactId>jedis</artifactId>
-                <version>${jedis.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.github.bingoohuang</groupId>
                 <artifactId>westid</artifactId>
                 <version>${westid.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.h2database</groupId>
-                <artifactId>h2</artifactId>
-                <version>${h2.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.bingoohuang</groupId>
-                <artifactId>delayqueue</artifactId>
-                <version>${delayqueue.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.testing.compile</groupId>
-                <artifactId>compile-testing</artifactId>
-                <version>${compile-testing.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.github.kstyrc</groupId>
-                <artifactId>embedded-redis</artifactId>
-                <version>${embedded-redis.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
                 <groupId>com.wix</groupId>
                 <artifactId>wix-embedded-mysql</artifactId>
                 <version>${wix-embedded-mysql.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp3</groupId>
-                <artifactId>mockwebserver</artifactId>
-                <version>${okhttp.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>io.vertx</groupId>
-                <artifactId>vertx-junit5</artifactId>
-                <version>${vertx.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>io.vertx</groupId>
-                <artifactId>vertx-rx-java</artifactId>
-                <version>${vertx.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>io.vertx</groupId>
-                <artifactId>vertx-rx-java2</artifactId>
-                <version>${vertx.version}</version>
-                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
