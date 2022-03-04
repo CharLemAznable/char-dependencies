@@ -79,6 +79,7 @@
         <delayqueue.version>0.0.20</delayqueue.version>
         <diamond-client.version>0.0.22</diamond-client.version>
         <eql.version>0.1.15</eql.version>
+        <java-utils.version>0.0.25</java-utils.version>
         <westcache.version>0.0.35</westcache.version>
         <westid.version>0.0.3</westid.version>
         <embedded-redis.version>0.6</embedded-redis.version>
@@ -221,6 +222,11 @@
                 <groupId>com.github.bingoohuang</groupId>
                 <artifactId>eql</artifactId>
                 <version>${eql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bingoohuang</groupId>
+                <artifactId>java-utils</artifactId>
+                <version>${java-utils.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.bingoohuang</groupId>
