@@ -73,7 +73,7 @@
         <cglib-nodep.version>3.3.0</cglib-nodep.version>
         <druid.version>1.2.8</druid.version>
         <fastjson.version>1.2.79</fastjson.version>
-        <transmittable-thread-local.version>2.12.4</transmittable-thread-local.version>
+        <transmittable-thread-local.version>2.12.5</transmittable-thread-local.version>
         <apollo-client.version>1.9.2</apollo-client.version>
         <asmvalidator.version>0.0.16</asmvalidator.version>
         <delayqueue.version>0.0.20</delayqueue.version>
