@@ -72,8 +72,8 @@
 
         <cglib-nodep.version>3.3.0</cglib-nodep.version>
         <druid.version>1.2.8</druid.version>
-        <fastjson.version>1.2.79</fastjson.version>
-        <transmittable-thread-local.version>2.12.5</transmittable-thread-local.version>
+        <fastjson.version>1.2.80</fastjson.version>
+        <transmittable-thread-local.version>2.12.6</transmittable-thread-local.version>
         <apollo-client.version>1.9.2</apollo-client.version>
         <asmvalidator.version>0.0.16</asmvalidator.version>
         <delayqueue.version>0.0.20</delayqueue.version>
@@ -92,10 +92,10 @@
         <toml4j.version>0.7.2</toml4j.version>
         <wix-embedded-mysql.version>4.6.2</wix-embedded-mysql.version>
         <commons-io.version>2.11.0</commons-io.version>
-        <!-- compatible with vertx-dependencies 4.2.5 -->
+        <!-- compatible with vertx-dependencies 4.2.6 -->
         <netty.version>4.1.74.Final</netty.version>
-        <vertx.version>4.2.5</vertx.version>
-        <joda-time.version>2.10.13</joda-time.version>
+        <vertx.version>4.2.6</vertx.version>
+        <joda-time.version>2.10.14</joda-time.version>
         <expiringmap.version>0.5.10</expiringmap.version>
         <commons-text.version>1.9</commons-text.version>
         <bouncycastle.version>1.70</bouncycastle.version>
@@ -104,11 +104,10 @@
         <jool-java-8.version>0.9.14</jool-java-8.version>
         <joor-java-8.version>0.9.14</joor-java-8.version>
         <joou-java-6.version>0.9.4</joou-java-6.version>
-        <asm-all.version>5.2</asm-all.version>
-        <redisson.version>3.16.8</redisson.version>
-        <spring-boot.version>2.6.4</spring-boot.version>
+        <redisson.version>3.17.0</redisson.version>
+        <spring-boot.version>2.6.5</spring-boot.version>
         <testcontainers.version>1.16.3</testcontainers.version>
-        <jedis.version>4.1.1</jedis.version>
+        <jedis.version>4.2.0</jedis.version>
 
         <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
@@ -353,11 +352,6 @@
                 <groupId>org.jooq</groupId>
                 <artifactId>joou-java-6</artifactId>
                 <version>${joou-java-6.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.ow2.asm</groupId>
-                <artifactId>asm-all</artifactId>
-                <version>${asm-all.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.redisson</groupId>
