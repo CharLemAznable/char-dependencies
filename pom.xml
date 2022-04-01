@@ -106,7 +106,7 @@
         <joou-java-6.version>0.9.4</joou-java-6.version>
         <asm.version>9.2</asm.version>
         <redisson.version>3.17.0</redisson.version>
-        <spring-boot.version>2.6.5</spring-boot.version>
+        <spring-boot.version>2.6.6</spring-boot.version>
         <testcontainers.version>1.16.3</testcontainers.version>
         <jedis.version>4.2.0</jedis.version>
 
