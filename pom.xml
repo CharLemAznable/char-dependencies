@@ -71,7 +71,7 @@
         <java.version>1.8</java.version>
 
         <cglib-nodep.version>3.3.0</cglib-nodep.version>
-        <druid.version>1.2.8</druid.version>
+        <druid.version>1.2.9</druid.version>
         <fastjson.version>1.2.80</fastjson.version>
         <transmittable-thread-local.version>2.12.6</transmittable-thread-local.version>
         <apollo-client.version>1.9.2</apollo-client.version>
@@ -87,7 +87,7 @@
         <guava.version>31.1-jre</guava.version>
         <guice.version>5.1.0</guice.version>
         <compile-testing.version>0.19</compile-testing.version>
-        <h2.version>2.1.210</h2.version>
+        <h2.version>2.1.212</h2.version>
         <format-preserving-encryption.version>1.0.0</format-preserving-encryption.version>
         <toml4j.version>0.7.2</toml4j.version>
         <wix-embedded-mysql.version>4.6.2</wix-embedded-mysql.version>
