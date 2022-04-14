@@ -92,9 +92,9 @@
         <toml4j.version>0.7.2</toml4j.version>
         <wix-embedded-mysql.version>4.6.2</wix-embedded-mysql.version>
         <commons-io.version>2.11.0</commons-io.version>
-        <!-- compatible with vertx-dependencies 4.2.6 -->
+        <!-- compatible with vertx-dependencies 4.2.7 -->
         <netty.version>4.1.74.Final</netty.version>
-        <vertx.version>4.2.6</vertx.version>
+        <vertx.version>4.2.7</vertx.version>
         <joda-time.version>2.10.14</joda-time.version>
         <expiringmap.version>0.5.10</expiringmap.version>
         <commons-text.version>1.9</commons-text.version>
@@ -107,8 +107,8 @@
         <asm.version>9.3</asm.version>
         <redisson.version>3.17.0</redisson.version>
         <spring-boot.version>2.6.6</spring-boot.version>
-        <testcontainers.version>1.16.3</testcontainers.version>
-        <jedis.version>4.2.1</jedis.version>
+        <testcontainers.version>1.17.1</testcontainers.version>
+        <jedis.version>4.2.2</jedis.version>
 
         <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
