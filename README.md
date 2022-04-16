@@ -9,7 +9,7 @@
 <parent>
   <groupId>com.github.charlemaznable</groupId>
   <artifactId>char-dependencies</artifactId>
-  <version>0.0.7</version>
+  <version>0.0.8</version>
 </parent>
 ```
 
@@ -19,6 +19,6 @@
 <parent>
   <groupId>com.github.charlemaznable</groupId>
   <artifactId>char-dependencies</artifactId>
-  <version>0.0.8-SNAPSHOT</version>
+  <version>0.0.9-SNAPSHOT</version>
 </parent>
 ```
