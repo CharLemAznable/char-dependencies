@@ -71,10 +71,10 @@
         <java.version>1.8</java.version>
 
         <cglib-nodep.version>3.3.0</cglib-nodep.version>
-        <druid.version>1.2.9</druid.version>
-        <fastjson.version>1.2.80</fastjson.version>
-        <transmittable-thread-local.version>2.12.6</transmittable-thread-local.version>
-        <apollo-client.version>1.9.2</apollo-client.version>
+        <druid.version>1.2.11</druid.version>
+        <fastjson.version>1.2.83</fastjson.version>
+        <transmittable-thread-local.version>2.14.0</transmittable-thread-local.version>
+        <apollo-client.version>2.0.1</apollo-client.version>
         <asmvalidator.version>0.0.16</asmvalidator.version>
         <delayqueue.version>0.0.20</delayqueue.version>
         <diamond-client.version>0.0.22</diamond-client.version>
@@ -87,15 +87,15 @@
         <guava.version>31.1-jre</guava.version>
         <guice.version>5.1.0</guice.version>
         <compile-testing.version>0.19</compile-testing.version>
-        <h2.version>2.1.212</h2.version>
+        <h2.version>2.1.214</h2.version>
         <format-preserving-encryption.version>1.0.0</format-preserving-encryption.version>
         <toml4j.version>0.7.2</toml4j.version>
         <wix-embedded-mysql.version>4.6.2</wix-embedded-mysql.version>
         <commons-io.version>2.11.0</commons-io.version>
-        <!-- compatible with vertx-dependencies 4.2.7 -->
-        <netty.version>4.1.74.Final</netty.version>
-        <vertx.version>4.2.7</vertx.version>
-        <joda-time.version>2.10.14</joda-time.version>
+        <!-- compatible with vertx-dependencies 4.3.3 -->
+        <netty.version>4.1.78.Final</netty.version>
+        <vertx.version>4.3.3</vertx.version>
+        <joda-time.version>2.11.1</joda-time.version>
         <expiringmap.version>0.5.10</expiringmap.version>
         <commons-text.version>1.9</commons-text.version>
         <bouncycastle.version>1.70</bouncycastle.version>
@@ -105,10 +105,10 @@
         <joor-java-8.version>0.9.14</joor-java-8.version>
         <joou-java-6.version>0.9.4</joou-java-6.version>
         <asm.version>9.3</asm.version>
-        <redisson.version>3.17.1</redisson.version>
-        <spring-boot.version>2.6.7</spring-boot.version>
-        <testcontainers.version>1.17.1</testcontainers.version>
-        <jedis.version>4.2.2</jedis.version>
+        <redisson.version>3.17.6</redisson.version>
+        <spring-boot.version>2.7.3</spring-boot.version>
+        <testcontainers.version>1.17.3</testcontainers.version>
+        <jedis.version>4.2.3</jedis.version>
 
         <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
