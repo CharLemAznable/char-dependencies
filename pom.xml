@@ -97,6 +97,8 @@
         <!-- compatible with vertx-dependencies 4.3.3 -->
         <netty.version>4.1.78.Final</netty.version>
         <vertx.version>4.3.3</vertx.version>
+        <!-- using by elasticsearch-java -->
+        <jakarta.json-api.version>2.1.1</jakarta.json-api.version>
         <joda-time.version>2.11.1</joda-time.version>
         <expiringmap.version>0.5.10</expiringmap.version>
         <commons-text.version>1.9</commons-text.version>
@@ -310,6 +312,11 @@
                 <version>${vertx.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.json</groupId>
+                <artifactId>jakarta.json-api</artifactId>
+                <version>${jakarta.json-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>joda-time</groupId>
