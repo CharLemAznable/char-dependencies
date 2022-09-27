@@ -99,7 +99,7 @@
         <vertx.version>4.3.3</vertx.version>
         <!-- using by elasticsearch-java -->
         <jakarta.json-api.version>2.1.1</jakarta.json-api.version>
-        <joda-time.version>2.11.1</joda-time.version>
+        <joda-time.version>2.11.2</joda-time.version>
         <expiringmap.version>0.5.10</expiringmap.version>
         <commons-text.version>1.9</commons-text.version>
         <bouncycastle.version>1.70</bouncycastle.version>
