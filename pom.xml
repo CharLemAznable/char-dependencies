@@ -99,7 +99,7 @@
         <vertx.version>4.3.4</vertx.version>
         <!-- using by elasticsearch-java -->
         <jakarta.json-api.version>2.1.1</jakarta.json-api.version>
-        <joda-time.version>2.11.2</joda-time.version>
+        <joda-time.version>2.12.0</joda-time.version>
         <expiringmap.version>0.5.10</expiringmap.version>
         <commons-text.version>1.10.0</commons-text.version>
         <bouncycastle.version>1.70</bouncycastle.version>
@@ -112,7 +112,7 @@
         <redisson.version>3.17.7</redisson.version>
         <spring-boot.version>2.7.4</spring-boot.version>
         <testcontainers.version>1.17.5</testcontainers.version>
-        <jedis.version>4.2.3</jedis.version>
+        <jedis.version>4.3.0</jedis.version>
 
         <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
