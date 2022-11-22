@@ -94,9 +94,10 @@
         <toml4j.version>0.7.2</toml4j.version>
         <wix-embedded-mysql.version>4.6.2</wix-embedded-mysql.version>
         <commons-io.version>2.11.0</commons-io.version>
-        <!-- compatible with vertx-dependencies 4.3.4 -->
-        <netty.version>4.1.82.Final</netty.version>
-        <vertx.version>4.3.4</vertx.version>
+        <grpc.version>1.51.0</grpc.version>
+        <!-- compatible with vertx-dependencies 4.3.5 -->
+        <netty.version>4.1.85.Final</netty.version>
+        <vertx.version>4.3.5</vertx.version>
         <!-- using by elasticsearch-java -->
         <jakarta.json-api.version>2.1.1</jakarta.json-api.version>
         <joda-time.version>2.12.1</joda-time.version>
@@ -111,6 +112,7 @@
         <asm.version>9.4</asm.version>
         <redisson.version>3.18.0</redisson.version>
         <spring-boot.version>2.7.5</spring-boot.version>
+        <spring-cloud.version>2021.0.5</spring-cloud.version>
         <testcontainers.version>1.17.6</testcontainers.version>
         <jedis.version>4.3.1</jedis.version>
 
@@ -300,6 +302,13 @@
                 <version>${commons-io.version}</version>
             </dependency>
             <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>grpc-bom</artifactId>
+                <version>${grpc.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-bom</artifactId>
                 <version>${netty.version}</version>
@@ -382,6 +391,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
