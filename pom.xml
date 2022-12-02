@@ -72,7 +72,7 @@
 
         <cglib-nodep.version>3.3.0</cglib-nodep.version>
         <!-- compatible with spring-boot-dependencies 2.7.5 -->
-        <elasticsearch-java.version>7.17.6</elasticsearch-java.version>
+        <elasticsearch-java.version>7.17.7</elasticsearch-java.version>
         <druid.version>1.2.15</druid.version>
         <fastjson.version>1.2.83</fastjson.version>
         <transmittable-thread-local.version>2.14.2</transmittable-thread-local.version>
@@ -80,9 +80,9 @@
         <asmvalidator.version>0.0.16</asmvalidator.version>
         <delayqueue.version>0.0.20</delayqueue.version>
         <diamond-client.version>0.0.22</diamond-client.version>
-        <eql.version>0.1.15</eql.version>
+        <eql.version>0.1.16</eql.version>
         <java-utils.version>0.0.25</java-utils.version>
-        <westcache.version>0.0.35</westcache.version>
+        <westcache.version>0.0.36</westcache.version>
         <westid.version>0.0.3</westid.version>
         <embedded-redis.version>0.6</embedded-redis.version>
         <auto-service.version>1.0.1</auto-service.version>
@@ -100,7 +100,7 @@
         <vertx.version>4.3.5</vertx.version>
         <!-- using by elasticsearch-java -->
         <jakarta.json-api.version>2.1.1</jakarta.json-api.version>
-        <joda-time.version>2.12.1</joda-time.version>
+        <joda-time.version>2.12.2</joda-time.version>
         <expiringmap.version>0.5.10</expiringmap.version>
         <commons-text.version>1.10.0</commons-text.version>
         <bouncycastle.version>1.70</bouncycastle.version>
@@ -110,8 +110,8 @@
         <joor-java-8.version>0.9.14</joor-java-8.version>
         <joou-java-6.version>0.9.4</joou-java-6.version>
         <asm.version>9.4</asm.version>
-        <redisson.version>3.18.0</redisson.version>
-        <spring-boot.version>2.7.5</spring-boot.version>
+        <redisson.version>3.18.1</redisson.version>
+        <spring-boot.version>2.7.6</spring-boot.version>
         <spring-cloud.version>2021.0.5</spring-cloud.version>
         <testcontainers.version>1.17.6</testcontainers.version>
         <jedis.version>4.3.1</jedis.version>
