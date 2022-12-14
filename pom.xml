@@ -16,7 +16,7 @@
     <licenses>
         <license>
             <name>MIT License</name>
-            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <url>https://www.opensource.org/licenses/mit-license.php</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -55,6 +55,17 @@
         </repository>
     </repositories>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <url>https://repo1.maven.org/maven2/</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
     <distributionManagement>
         <repository>
             <id>ossrh</id>
@@ -68,11 +79,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
 
-        <cglib-nodep.version>3.3.0</cglib-nodep.version>
-        <!-- compatible with spring-boot-dependencies 2.7.6 -->
-        <elasticsearch-java.version>7.17.7</elasticsearch-java.version>
         <druid.version>1.2.15</druid.version>
         <fastjson.version>1.2.83</fastjson.version>
         <transmittable-thread-local.version>2.14.2</transmittable-thread-local.version>
@@ -92,14 +100,11 @@
         <h2.version>2.1.214</h2.version>
         <format-preserving-encryption.version>1.0.0</format-preserving-encryption.version>
         <toml4j.version>0.7.2</toml4j.version>
-        <wix-embedded-mysql.version>4.6.2</wix-embedded-mysql.version>
         <commons-io.version>2.11.0</commons-io.version>
         <grpc.version>1.51.0</grpc.version>
         <!-- compatible with vertx-dependencies 4.3.6 -->
         <netty.version>4.1.85.Final</netty.version>
         <vertx.version>4.3.6</vertx.version>
-        <!-- using by elasticsearch-java -->
-        <jakarta.json-api.version>2.1.1</jakarta.json-api.version>
         <joda-time.version>2.12.2</joda-time.version>
         <expiringmap.version>0.5.10</expiringmap.version>
         <commons-text.version>1.10.0</commons-text.version>
@@ -111,23 +116,22 @@
         <joou-java-6.version>0.9.4</joou-java-6.version>
         <asm.version>9.4</asm.version>
         <redisson.version>3.18.1</redisson.version>
-        <spring-boot.version>2.7.6</spring-boot.version>
+        <spring-boot.version>3.0.0</spring-boot.version>
         <spring-cloud.version>2021.0.5</spring-cloud.version>
         <testcontainers.version>1.17.6</testcontainers.version>
-        <jedis.version>4.3.1</jedis.version>
 
-        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
+        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
-        <jacoco-maven-plugin.version>0.8.7</jacoco-maven-plugin.version>
+        <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
         <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
         <sonar.organization>charlemaznable</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <versions-maven-plugin.version>2.9.0</versions-maven-plugin.version>
+        <versions-maven-plugin.version>2.13.0</versions-maven-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-        <maven-javadoc-plugin.version>3.3.1</maven-javadoc-plugin.version>
+        <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
         <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
-        <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
+        <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
     </properties>
 
     <dependencies>
@@ -186,16 +190,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>cglib</groupId>
-                <artifactId>cglib-nodep</artifactId>
-                <version>${cglib-nodep.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>co.elastic.clients</groupId>
-                <artifactId>elasticsearch-java</artifactId>
-                <version>${elasticsearch-java.version}</version>
-            </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
@@ -292,11 +286,6 @@
                 <version>${toml4j.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.wix</groupId>
-                <artifactId>wix-embedded-mysql</artifactId>
-                <version>${wix-embedded-mysql.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
@@ -321,11 +310,6 @@
                 <version>${vertx.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>jakarta.json</groupId>
-                <artifactId>jakarta.json-api</artifactId>
-                <version>${jakarta.json-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>joda-time</groupId>
@@ -407,11 +391,6 @@
                 <version>${testcontainers.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>redis.clients</groupId>
-                <artifactId>jedis</artifactId>
-                <version>${jedis.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -537,7 +516,7 @@
                             <encoding>UTF-8</encoding>
                             <docencoding>UTF-8</docencoding>
                             <links>
-                                <link>http://docs.oracle.com/javase/8/docs/api</link>
+                                <link>https://docs.oracle.com/javase/17/docs/api</link>
                             </links>
                         </configuration>
                     </plugin>
