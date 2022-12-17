@@ -420,6 +420,7 @@
                 <version>${maven-surefire-plugin.version}</version>
                 <configuration>
                     <argLine>
+                        @{argLine}
                         --add-opens java.base/java.nio=ALL-UNNAMED
                     </argLine>
                 </configuration>
