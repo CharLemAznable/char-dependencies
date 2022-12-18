@@ -224,6 +224,12 @@
                 <groupId>com.github.bingoohuang</groupId>
                 <artifactId>diamond-client</artifactId>
                 <version>${diamond-client.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.jooq</groupId>
+                        <artifactId>joor-java-8</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>com.github.bingoohuang</groupId>
@@ -234,6 +240,20 @@
                 <groupId>com.github.bingoohuang</groupId>
                 <artifactId>java-utils</artifactId>
                 <version>${java-utils.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.jooq</groupId>
+                        <artifactId>jool-java-8</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.jooq</groupId>
+                        <artifactId>joor-java-8</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.jooq</groupId>
+                        <artifactId>joou-java-6</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>com.github.bingoohuang</groupId>
