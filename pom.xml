@@ -96,15 +96,14 @@
         <auto-service.version>1.0.1</auto-service.version>
         <guava.version>31.1-jre</guava.version>
         <guice.version>5.1.0</guice.version>
-        <compile-testing.version>0.20</compile-testing.version>
-        <h2.version>2.1.214</h2.version>
+        <compile-testing.version>0.21.0</compile-testing.version>
         <format-preserving-encryption.version>1.0.0</format-preserving-encryption.version>
         <toml4j.version>0.7.2</toml4j.version>
         <commons-io.version>2.11.0</commons-io.version>
-        <grpc.version>1.51.0</grpc.version>
-        <!-- compatible with vertx-dependencies 4.3.6 -->
-        <netty.version>4.1.85.Final</netty.version>
-        <vertx.version>4.3.6</vertx.version>
+        <grpc.version>1.51.1</grpc.version>
+        <!-- compatible with vertx-dependencies 4.3.7 -->
+        <netty.version>4.1.86.Final</netty.version>
+        <vertx.version>4.3.7</vertx.version>
         <joda-time.version>2.12.2</joda-time.version>
         <expiringmap.version>0.5.10</expiringmap.version>
         <commons-text.version>1.10.0</commons-text.version>
@@ -115,9 +114,9 @@
         <joor.version>0.9.14</joor.version>
         <joou.version>0.9.4</joou.version>
         <asm.version>9.4</asm.version>
-        <redisson.version>3.18.1</redisson.version>
-        <spring-boot.version>3.0.0</spring-boot.version>
-        <spring-cloud.version>2021.0.5</spring-cloud.version>
+        <redisson.version>3.19.0</redisson.version>
+        <spring-boot.version>3.0.1</spring-boot.version>
+        <spring-cloud.version>2022.0.0</spring-cloud.version>
         <testcontainers.version>1.17.6</testcontainers.version>
 
         <maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
@@ -289,11 +288,6 @@
                 <groupId>com.google.testing.compile</groupId>
                 <artifactId>compile-testing</artifactId>
                 <version>${compile-testing.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.h2database</groupId>
-                <artifactId>h2</artifactId>
-                <version>${h2.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.idealista</groupId>
