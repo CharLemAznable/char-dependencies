@@ -6,7 +6,7 @@
 
     <groupId>com.github.charlemaznable</groupId>
     <artifactId>char-dependencies</artifactId>
-    <version>2023.0.0-SNAPSHOT</version>
+    <version>2022.0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Char Dependencies</name>
@@ -16,7 +16,7 @@
     <licenses>
         <license>
             <name>MIT License</name>
-            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <url>https://www.opensource.org/licenses/mit-license.php</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -55,6 +55,17 @@
         </repository>
     </repositories>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <url>https://repo1.maven.org/maven2/</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
     <distributionManagement>
         <repository>
             <id>ossrh</id>
@@ -72,7 +83,7 @@
 
         <cglib-nodep.version>3.3.0</cglib-nodep.version>
         <!-- compatible with spring-boot-dependencies 2.7.6 -->
-        <elasticsearch-java.version>7.17.7</elasticsearch-java.version>
+        <elasticsearch-java.version>7.17.8</elasticsearch-java.version>
         <druid.version>1.2.15</druid.version>
         <fastjson.version>1.2.83</fastjson.version>
         <transmittable-thread-local.version>2.14.2</transmittable-thread-local.version>
@@ -88,16 +99,15 @@
         <auto-service.version>1.0.1</auto-service.version>
         <guava.version>31.1-jre</guava.version>
         <guice.version>5.1.0</guice.version>
-        <compile-testing.version>0.20</compile-testing.version>
+        <compile-testing.version>0.21.0</compile-testing.version>
         <h2.version>2.1.214</h2.version>
         <format-preserving-encryption.version>1.0.0</format-preserving-encryption.version>
         <toml4j.version>0.7.2</toml4j.version>
-        <wix-embedded-mysql.version>4.6.2</wix-embedded-mysql.version>
         <commons-io.version>2.11.0</commons-io.version>
-        <grpc.version>1.51.0</grpc.version>
-        <!-- compatible with vertx-dependencies 4.3.6 -->
-        <netty.version>4.1.85.Final</netty.version>
-        <vertx.version>4.3.6</vertx.version>
+        <grpc.version>1.51.1</grpc.version>
+        <!-- compatible with vertx-dependencies 4.3.7 -->
+        <netty.version>4.1.86.Final</netty.version>
+        <vertx.version>4.3.7</vertx.version>
         <!-- using by elasticsearch-java -->
         <jakarta.json-api.version>2.1.1</jakarta.json-api.version>
         <joda-time.version>2.12.2</joda-time.version>
@@ -110,24 +120,24 @@
         <joor-java-8.version>0.9.14</joor-java-8.version>
         <joou-java-6.version>0.9.4</joou-java-6.version>
         <asm.version>9.4</asm.version>
-        <redisson.version>3.18.1</redisson.version>
-        <spring-boot.version>2.7.6</spring-boot.version>
+        <redisson.version>3.19.0</redisson.version>
+        <spring-boot.version>2.7.7</spring-boot.version>
         <spring-cloud.version>2021.0.5</spring-cloud.version>
         <testcontainers.version>1.17.6</testcontainers.version>
         <jedis.version>4.3.1</jedis.version>
 
-        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
+        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
-        <jacoco-maven-plugin.version>0.8.7</jacoco-maven-plugin.version>
+        <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
         <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
         <sonar.organization>charlemaznable</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <versions-maven-plugin.version>2.9.0</versions-maven-plugin.version>
+        <versions-maven-plugin.version>2.13.0</versions-maven-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-        <maven-javadoc-plugin.version>3.3.1</maven-javadoc-plugin.version>
+        <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
         <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
-        <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
+        <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
     </properties>
 
     <dependencies>
@@ -290,11 +300,6 @@
                 <groupId>com.moandjiezana.toml</groupId>
                 <artifactId>toml4j</artifactId>
                 <version>${toml4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.wix</groupId>
-                <artifactId>wix-embedded-mysql</artifactId>
-                <version>${wix-embedded-mysql.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
@@ -537,7 +542,7 @@
                             <encoding>UTF-8</encoding>
                             <docencoding>UTF-8</docencoding>
                             <links>
-                                <link>http://docs.oracle.com/javase/8/docs/api</link>
+                                <link>https://docs.oracle.com/javase/8/docs/api</link>
                             </links>
                         </configuration>
                     </plugin>
