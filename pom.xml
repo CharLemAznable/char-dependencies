@@ -82,7 +82,7 @@
         <java.version>1.8</java.version>
 
         <cglib-nodep.version>3.3.0</cglib-nodep.version>
-        <!-- compatible with spring-boot-dependencies 2.7.6 -->
+        <!-- compatible with spring-boot-dependencies 2.7.7 -->
         <elasticsearch-java.version>7.17.8</elasticsearch-java.version>
         <druid.version>1.2.15</druid.version>
         <fastjson.version>1.2.83</fastjson.version>
@@ -120,7 +120,7 @@
         <joor-java-8.version>0.9.14</joor-java-8.version>
         <joou-java-6.version>0.9.4</joou-java-6.version>
         <asm.version>9.4</asm.version>
-        <redisson.version>3.19.0</redisson.version>
+        <redisson.version>3.19.1</redisson.version>
         <spring-boot.version>2.7.7</spring-boot.version>
         <spring-cloud.version>2021.0.5</spring-cloud.version>
         <testcontainers.version>1.17.6</testcontainers.version>
