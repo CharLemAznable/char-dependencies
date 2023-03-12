@@ -84,7 +84,7 @@
         <cglib-nodep.version>3.3.0</cglib-nodep.version>
         <!-- compatible with spring-boot-dependencies 2.7.8 -->
         <elasticsearch-java.version>7.17.8</elasticsearch-java.version>
-        <druid.version>1.2.15</druid.version>
+        <druid.version>1.2.16</druid.version>
         <fastjson.version>1.2.83</fastjson.version>
         <transmittable-thread-local.version>2.14.2</transmittable-thread-local.version>
         <apollo-client.version>2.1.0</apollo-client.version>
@@ -104,10 +104,10 @@
         <format-preserving-encryption.version>1.0.0</format-preserving-encryption.version>
         <toml4j.version>0.7.2</toml4j.version>
         <commons-io.version>2.11.0</commons-io.version>
-        <grpc.version>1.52.1</grpc.version>
-        <!-- compatible with vertx-dependencies 4.3.7 -->
-        <netty.version>4.1.86.Final</netty.version>
-        <vertx.version>4.3.7</vertx.version>
+        <grpc.version>1.53.0</grpc.version>
+        <!-- compatible with vertx-dependencies 4.4.0 -->
+        <netty.version>4.1.89.Final</netty.version>
+        <vertx.version>4.4.0</vertx.version>
         <!-- using by elasticsearch-java -->
         <jakarta.json-api.version>2.1.1</jakarta.json-api.version>
         <joda-time.version>2.12.2</joda-time.version>
@@ -115,16 +115,19 @@
         <commons-text.version>1.10.0</commons-text.version>
         <bouncycastle.version>1.70</bouncycastle.version>
         <dom4j.version>2.1.4</dom4j.version>
-        <annotations.version>24.0.0</annotations.version>
-        <jool-java-8.version>0.9.14</jool-java-8.version>
+        <annotations.version>24.0.1</annotations.version>
+        <jool-java-8.version>0.9.15</jool-java-8.version>
         <joor-java-8.version>0.9.14</joor-java-8.version>
         <joou-java-6.version>0.9.4</joou-java-6.version>
         <asm.version>9.4</asm.version>
-        <redisson.version>3.19.3</redisson.version>
-        <spring-boot.version>2.7.8</spring-boot.version>
-        <spring-cloud.version>2021.0.5</spring-cloud.version>
+        <redisson.version>3.20.0</redisson.version>
+        <spring-boot.version>2.7.9</spring-boot.version>
+        <spring-cloud.version>2021.0.6</spring-cloud.version>
         <testcontainers.version>1.17.6</testcontainers.version>
         <jedis.version>4.3.1</jedis.version>
+
+        <!-- fixed vertx-4.4.0 slf4j version -->
+        <slf4j.version>1.7.36</slf4j.version>
 
         <maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
@@ -418,6 +421,13 @@
                 <groupId>redis.clients</groupId>
                 <artifactId>jedis</artifactId>
                 <version>${jedis.version}</version>
+            </dependency>
+
+            <!-- fixed vertx-4.4.0 slf4j version -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
