@@ -88,7 +88,7 @@
         <asmvalidator.version>0.0.16</asmvalidator.version>
         <delayqueue.version>0.0.20</delayqueue.version>
         <diamond-client.version>0.0.22</diamond-client.version>
-        <eql.version>0.1.18</eql.version>
+        <eql.version>0.1.19</eql.version>
         <java-utils.version>0.0.25</java-utils.version>
         <westcache.version>0.0.37</westcache.version>
         <westid.version>0.0.3</westid.version>
@@ -103,6 +103,8 @@
         <grpc.version>1.53.0</grpc.version>
         <!-- compatible with vertx-dependencies 4.4.0 -->
         <netty.version>4.1.89.Final</netty.version>
+        <!-- fixed vertx-4.4.0 slf4j version -->
+        <slf4j.version>2.0.6</slf4j.version>
         <vertx.version>4.4.0</vertx.version>
         <joda-time.version>2.12.2</joda-time.version>
         <expiringmap.version>0.5.10</expiringmap.version>
@@ -118,9 +120,6 @@
         <spring-boot.version>3.0.4</spring-boot.version>
         <spring-cloud.version>2022.0.1</spring-cloud.version>
         <testcontainers.version>1.17.6</testcontainers.version>
-
-        <!-- fixed vertx-4.4.0 slf4j version -->
-        <slf4j.version>2.0.6</slf4j.version>
 
         <maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
@@ -326,6 +325,33 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- fixed vertx-4.4.0 slf4j version -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-jdk14</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jcl-over-slf4j</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <!-- fixed vertx-4.4.0 slf4j version end -->
             <dependency>
                 <groupId>io.vertx</groupId>
                 <artifactId>vertx-dependencies</artifactId>
@@ -413,33 +439,6 @@
                 <version>${testcontainers.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-
-            <!-- fixed vertx-4.4.0 slf4j version -->
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-simple</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-log4j12</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-jdk14</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>jcl-over-slf4j</artifactId>
-                <version>${slf4j.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
