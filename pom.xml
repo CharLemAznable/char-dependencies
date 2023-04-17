@@ -6,7 +6,7 @@
 
     <groupId>com.github.charlemaznable</groupId>
     <artifactId>char-dependencies</artifactId>
-    <version>2023.0.5-SNAPSHOT</version>
+    <version>2023.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Char Dependencies</name>
@@ -81,7 +81,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>17</java.version>
 
-        <druid.version>1.2.16</druid.version>
+        <druid.version>1.2.17</druid.version>
         <fastjson.version>1.2.83</fastjson.version>
         <transmittable-thread-local.version>2.14.2</transmittable-thread-local.version>
         <apollo-client.version>2.1.0</apollo-client.version>
@@ -100,13 +100,13 @@
         <format-preserving-encryption.version>1.0.0</format-preserving-encryption.version>
         <toml4j.version>0.7.2</toml4j.version>
         <commons-io.version>2.11.0</commons-io.version>
-        <grpc.version>1.53.0</grpc.version>
-        <!-- compatible with vertx-dependencies 4.4.0 -->
-        <netty.version>4.1.89.Final</netty.version>
-        <!-- fixed vertx-4.4.0 slf4j version -->
-        <slf4j.version>2.0.6</slf4j.version>
-        <vertx.version>4.4.0</vertx.version>
-        <joda-time.version>2.12.2</joda-time.version>
+        <grpc.version>1.54.0</grpc.version>
+        <!-- compatible with vertx-dependencies 4.4.1 -->
+        <netty.version>4.1.90.Final</netty.version>
+        <!-- fixed vertx-4.4.1 slf4j version -->
+        <slf4j.version>2.0.7</slf4j.version>
+        <vertx.version>4.4.1</vertx.version>
+        <joda-time.version>2.12.5</joda-time.version>
         <expiringmap.version>0.5.10</expiringmap.version>
         <commons-text.version>1.10.0</commons-text.version>
         <bouncycastle.version>1.70</bouncycastle.version>
@@ -115,11 +115,11 @@
         <jool.version>0.9.15</jool.version>
         <joor.version>0.9.14</joor.version>
         <joou.version>0.9.4</joou.version>
-        <asm.version>9.4</asm.version>
-        <redisson.version>3.20.0</redisson.version>
-        <spring-boot.version>3.0.4</spring-boot.version>
-        <spring-cloud.version>2022.0.1</spring-cloud.version>
-        <testcontainers.version>1.17.6</testcontainers.version>
+        <asm.version>9.5</asm.version>
+        <redisson.version>3.20.1</redisson.version>
+        <spring-boot.version>3.0.5</spring-boot.version>
+        <spring-cloud.version>2022.0.2</spring-cloud.version>
+        <testcontainers.version>1.18.0</testcontainers.version>
 
         <maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
