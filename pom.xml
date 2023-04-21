@@ -100,7 +100,7 @@
         <format-preserving-encryption.version>1.0.0</format-preserving-encryption.version>
         <toml4j.version>0.7.2</toml4j.version>
         <commons-io.version>2.11.0</commons-io.version>
-        <grpc.version>1.54.0</grpc.version>
+        <grpc.version>1.54.1</grpc.version>
         <!-- compatible with vertx-dependencies 4.4.1 -->
         <netty.version>4.1.90.Final</netty.version>
         <!-- fixed vertx-4.4.1 slf4j version -->
