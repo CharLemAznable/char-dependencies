@@ -81,7 +81,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>17</java.version>
 
-        <druid.version>1.2.17</druid.version>
+        <druid.version>1.2.18</druid.version>
         <fastjson.version>1.2.83</fastjson.version>
         <transmittable-thread-local.version>2.14.2</transmittable-thread-local.version>
         <apollo-client.version>2.1.0</apollo-client.version>
@@ -95,20 +95,20 @@
         <embedded-redis.version>0.6</embedded-redis.version>
         <auto-service.version>1.0.1</auto-service.version>
         <guava.version>31.1-jre</guava.version>
-        <guice.version>5.1.0</guice.version>
+        <guice.version>7.0.0</guice.version>
         <compile-testing.version>0.21.0</compile-testing.version>
         <format-preserving-encryption.version>1.0.0</format-preserving-encryption.version>
         <toml4j.version>0.7.2</toml4j.version>
         <commons-io.version>2.11.0</commons-io.version>
         <grpc.version>1.55.1</grpc.version>
-        <!-- compatible with vertx-dependencies 4.4.1 -->
-        <netty.version>4.1.90.Final</netty.version>
+        <!-- compatible with vertx-dependencies 4.4.2 -->
+        <netty.version>4.1.92.Final</netty.version>
         <rxjava.version>1.3.8</rxjava.version>
         <rxjava2.version>2.2.21</rxjava2.version>
         <mutiny.version>2.2.0</mutiny.version>
-        <!-- fixed vertx-4.4.1 slf4j version -->
+        <!-- fixed vertx-4.4.2 slf4j version -->
         <slf4j.version>2.0.7</slf4j.version>
-        <vertx.version>4.4.1</vertx.version>
+        <vertx.version>4.4.2</vertx.version>
         <joda-time.version>2.12.5</joda-time.version>
         <expiringmap.version>0.5.10</expiringmap.version>
         <commons-text.version>1.10.0</commons-text.version>
@@ -119,7 +119,7 @@
         <joor.version>0.9.14</joor.version>
         <joou.version>0.9.4</joou.version>
         <asm.version>9.5</asm.version>
-        <redisson.version>3.21.0</redisson.version>
+        <redisson.version>3.21.1</redisson.version>
         <spring-boot.version>3.0.6</spring-boot.version>
         <spring-cloud.version>2022.0.2</spring-cloud.version>
         <testcontainers.version>1.18.1</testcontainers.version>
