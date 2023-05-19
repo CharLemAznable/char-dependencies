@@ -100,6 +100,7 @@
         <format-preserving-encryption.version>1.0.0</format-preserving-encryption.version>
         <toml4j.version>0.7.2</toml4j.version>
         <commons-io.version>2.11.0</commons-io.version>
+        <jetcd.version>0.7.5</jetcd.version>
         <grpc.version>1.55.1</grpc.version>
         <!-- compatible with vertx-dependencies 4.4.2 -->
         <netty.version>4.1.92.Final</netty.version>
@@ -313,6 +314,11 @@
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.etcd</groupId>
+                <artifactId>jetcd-core</artifactId>
+                <version>${jetcd.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.grpc</groupId>
