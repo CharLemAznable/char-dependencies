@@ -322,7 +322,7 @@
             </dependency>
             <dependency>
                 <groupId>io.etcd</groupId>
-                <artifactId>jetcd-test</artifactId>
+                <artifactId>jetcd-launcher</artifactId>
                 <version>${jetcd.version}</version>
             </dependency>
             <dependency>
