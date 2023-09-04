@@ -357,7 +357,7 @@
                 <artifactId>mutiny</artifactId>
                 <version>${mutiny.version}</version>
             </dependency>
-            <!-- fixed vertx-4.4.0 slf4j version -->
+            <!-- fixed vertx-4.4.5 slf4j version -->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
@@ -383,7 +383,7 @@
                 <artifactId>jcl-over-slf4j</artifactId>
                 <version>${slf4j.version}</version>
             </dependency>
-            <!-- fixed vertx-4.4.0 slf4j version end -->
+            <!-- fixed vertx-4.4.5 slf4j version end -->
             <dependency>
                 <groupId>io.vertx</groupId>
                 <artifactId>vertx-dependencies</artifactId>
