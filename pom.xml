@@ -6,7 +6,7 @@
 
     <groupId>com.github.charlemaznable</groupId>
     <artifactId>char-dependencies</artifactId>
-    <version>2023.2.3-SNAPSHOT</version>
+    <version>2024.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Char Dependencies</name>
@@ -81,10 +81,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>17</java.version>
 
-        <druid.version>1.2.19</druid.version>
+        <druid.version>1.2.23</druid.version>
         <fastjson.version>1.2.83</fastjson.version>
-        <transmittable-thread-local.version>2.14.3</transmittable-thread-local.version>
-        <apollo-client.version>2.1.0</apollo-client.version>
+        <transmittable-thread-local.version>2.14.5</transmittable-thread-local.version>
+        <apollo-client.version>2.2.0</apollo-client.version>
         <asmvalidator.version>0.0.16</asmvalidator.version>
         <delayqueue.version>0.0.20</delayqueue.version>
         <diamond-client.version>0.0.22</diamond-client.version>
@@ -94,50 +94,50 @@
         <westid.version>0.0.3</westid.version>
         <embedded-redis.version>0.6</embedded-redis.version>
         <auto-service.version>1.1.1</auto-service.version>
-        <guava.version>32.1.2-jre</guava.version>
+        <guava.version>33.2.0-jre</guava.version>
         <guice.version>7.0.0</guice.version>
         <compile-testing.version>0.21.0</compile-testing.version>
         <format-preserving-encryption.version>1.0.0</format-preserving-encryption.version>
-        <toml4j.version>0.7.2</toml4j.version>
-        <commons-io.version>2.13.0</commons-io.version>
-        <jetcd.version>0.7.6</jetcd.version>
-        <grpc.version>1.58.0</grpc.version>
-        <!-- compatible with vertx-dependencies 4.4.5 -->
-        <netty.version>4.1.97.Final</netty.version>
+        <toml4j.version>0.7.3</toml4j.version>
+        <commons-io.version>2.16.1</commons-io.version>
+        <jetcd.version>0.8.2</jetcd.version>
+        <grpc.version>1.64.0</grpc.version>
+        <!-- compatible with vertx-dependencies 4.5.8 -->
+        <netty.version>4.1.110.Final</netty.version>
         <rxjava.version>1.3.8</rxjava.version>
         <rxjava2.version>2.2.21</rxjava2.version>
-        <mutiny.version>2.4.0</mutiny.version>
-        <!-- fixed vertx-4.4.5 slf4j version -->
-        <slf4j.version>2.0.7</slf4j.version>
-        <vertx.version>4.4.5</vertx.version>
-        <joda-time.version>2.12.5</joda-time.version>
-        <expiringmap.version>0.5.10</expiringmap.version>
-        <commons-text.version>1.10.0</commons-text.version>
-        <bouncycastle.version>1.70</bouncycastle.version>
+        <mutiny.version>2.6.0</mutiny.version>
+        <!-- fixed vertx-4.5.8 slf4j version -->
+        <slf4j.version>2.0.13</slf4j.version>
+        <vertx.version>4.5.8</vertx.version>
+        <joda-time.version>2.12.7</joda-time.version>
+        <expiringmap.version>0.5.11</expiringmap.version>
+        <commons-text.version>1.12.0</commons-text.version>
+        <bouncycastle.version>1.78.1</bouncycastle.version>
         <dom4j.version>2.1.4</dom4j.version>
-        <annotations.version>24.0.1</annotations.version>
+        <annotations.version>24.1.0</annotations.version>
         <jool.version>0.9.15</jool.version>
         <joor.version>0.9.15</joor.version>
         <joou.version>0.9.4</joou.version>
-        <asm.version>9.5</asm.version>
-        <redisson.version>3.23.4</redisson.version>
-        <spring-boot.version>3.1.3</spring-boot.version>
-        <spring-cloud.version>2022.0.4</spring-cloud.version>
-        <testcontainers.version>1.19.0</testcontainers.version>
+        <asm.version>9.7</asm.version>
+        <redisson.version>3.30.0</redisson.version>
+        <spring-boot.version>3.3.0</spring-boot.version>
+        <spring-cloud.version>2023.0.2</spring-cloud.version>
+        <testcontainers.version>1.19.8</testcontainers.version>
 
-        <maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
-        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
-        <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
-        <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
-        <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
+        <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
+        <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
+        <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
+        <sonar-maven-plugin.version>3.11.0.3922</sonar-maven-plugin.version>
         <sonar.organization>charlemaznable</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <versions-maven-plugin.version>2.13.0</versions-maven-plugin.version>
-        <maven-deploy-plugin.version>3.0.0</maven-deploy-plugin.version>
-        <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-        <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
-        <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
-        <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
+        <versions-maven-plugin.version>2.16.2</versions-maven-plugin.version>
+        <maven-deploy-plugin.version>3.1.2</maven-deploy-plugin.version>
+        <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
+        <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
+        <maven-gpg-plugin.version>3.2.4</maven-gpg-plugin.version>
+        <nexus-staging-maven-plugin.version>1.7.0</nexus-staging-maven-plugin.version>
     </properties>
 
     <dependencies>
@@ -306,7 +306,7 @@
                 <version>${format-preserving-encryption.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.moandjiezana.toml</groupId>
+                <groupId>io.hotmoka</groupId>
                 <artifactId>toml4j</artifactId>
                 <version>${toml4j.version}</version>
             </dependency>
@@ -408,12 +408,12 @@
             </dependency>
             <dependency>
                 <groupId>org.bouncycastle</groupId>
-                <artifactId>bcprov-jdk15on</artifactId>
+                <artifactId>bcprov-jdk18on</artifactId>
                 <version>${bouncycastle.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.bouncycastle</groupId>
-                <artifactId>bcpkix-jdk15on</artifactId>
+                <artifactId>bcpkix-jdk18on</artifactId>
                 <version>${bouncycastle.version}</version>
             </dependency>
             <dependency>
